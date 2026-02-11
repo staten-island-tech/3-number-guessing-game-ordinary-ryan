@@ -8,12 +8,10 @@ while random_int != guess:
     guess_history.append(guess)
     if guess > random_int:
         print(guess_history)
-        print("guess is too big")
-        guess = int(input("state another number"))
+        guess = int(input("guess is too big,state another number"))
     elif guess < random_int:
         print(guess_history)
-        print("guess is too small")
-        guess = int(input("state another number"))
+        guess = int(input("guess is too small, state another number"))
 else:
     guess_history.append(guess)
     print(guess_history)
