@@ -10,10 +10,11 @@ while random_int != guess:
         print(guess_history)
         print("guess is too big")
         guess = int(input("state another number"))
-    if guess < random_int:
+    elif guess < random_int:
         print(guess_history)
         print("guess is too small")
         guess = int(input("state another number"))
 else:
+    guess_history.append(guess)
     print(guess_history)
     print("correct")
